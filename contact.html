@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Me</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <!--header-->
+        <div class="email">
+            <div class="container">
+                <ul>
+                    <li><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><i class="fa-regular fa-envelope"></i> andtnriola@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+            <h1><a href="andtnriola.html">ANDI TENRIOLA</a></h1>
+                <ul>
+                    <li><a href="andtnriola.html">HOME</a></li>
+                    <li><a href="biodata.html">BIODATA</a></li>
+                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li class="active"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--label-->
+        <section class="label">
+            <div class="container">
+                <p>Home/Contact</p>
+            </div>
+        </section>
+        <!--contact-->
+        <section class="contact">
+            <div class="container1">
+                    <div class="card-container">
+                        <div class="left">
+                            <div class="left-container">
+                                <h2>Contact Me!</h2>
+                                <p>Silahkan hubungi saya dengan melalui formulir kontak yang tersedia atau
+                                    dengan mengklik icon dibawah ini
+                                </p>
+                                <br>
+                                <ul>
+                                    <li><a href="https://wa.me/6281340283588"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                                    <li><a href="https://instagram.com/andtnriola?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right-container">
+                                <form method="post">
+                                    <div class="form1">
+                                        <label>Masukkan Nama anda </label>
+                                        <input type = "text" id ="nama">
+                                    </div>
+                                    <div class="form1">
+                                        <label>Masukkan Email anda</label>
+                                        <input type = "text" id ="email">
+                                    </div>
+                                    <div class="form1">
+                                        <label>Masukkan pesan yang ingin disampaikan</label>
+                                        <textarea rows="10" placeholder = "Pesan" id = "pesan"></textarea>
+                                    </div>
+                                    <div class="form1">
+                                        <input type = "submit" class = "submit" value="Kirim" onclick="pengecekan2()" >
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <script language="JavaScript">
+                        function pengecekan2(){
+                            var nama1 = document.getElementById("nama").value;
+                            var email1 = document.getElementById("email").value;
+                            var pesan1 = document.getElementById("pesan").value;
+                            if(nama1=="" || email1=="" || pesan==""){
+                                window.alert("Silahkan masukkan Nama,Email,dan Pesan Anda!");
+                            } else {
+                            window.alert("Pesan Berhasil Dikirim.");
+                            
+                            }
+                        }
+                        </script>
+            </div>
+        </section>
+    </body>
+</html>

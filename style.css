@@ -1,0 +1,377 @@
+@font-face /*perintah untuk memanggil font eksternal*/
+  {
+    font-family: 'heycomic'; 
+    src: url('Hey Comic.ttf');
+  }
+* {
+    padding: 0;
+    margin: 0;
+    font-family: tahoma;
+}
+h1 a, header ul li a{
+    font-family: 'heycomic' !important;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.email {
+    padding: 5px 0;
+    background-color: darkslateblue;
+}
+.email ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: darkslateblue;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    display: inline-block;
+    padding: 25px 20px;
+}
+header ul li a:hover {
+    background-color: darkslateblue;
+    color: whitesmoke;
+}
+.active {
+    background-color: darkslateblue;
+    color: whitesmoke;
+}
+.banner {
+    height: 60vh;
+    background-image: url('phinisi.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::after {
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgbt(20, 143, 119, .6);
+}
+.banner h2 {
+    color: whitesmoke;
+    z-index: 1;
+    padding: 20px 25px;
+    /*border: 3px solid whitesmoke;*/
+    text-shadow: 5px 5px 5px #333333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:50px ;
+}
+section {
+    padding: 50px 0;
+}
+section h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: darkslateblue;
+}
+.about p {
+    color: darkslateblue;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+.label {
+    background-color: darkslateblue;
+    color: whitesmoke;
+}
+.box {
+    border: 1px solid;
+    color: darkslateblue;
+}
+.box .col-4 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid;
+    text-align: center;
+    float: left;
+}
+.box .col-4 h4 {
+    margin: 10px 0;
+}
+footer {
+    padding: 20px 0;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    text-align: center;
+}
+.icon{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.tombol{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: darkslateblue;
+    margin: 10px;
+    border-radius: 30%;
+    box-sizing: 0 5px 15px -5px darkslateblue;
+    overflow: hidden;
+    position: relative;
+    color: darkslateblue;
+}
+.tombol i{
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 90px;
+}
+.tombol:hover {
+    transform: scale(1.3);
+    color: darkslateblue;
+}
+.tombol::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+    background: darkslateblue;
+}
+.tombol:hover:before{
+    left: -10px;
+    top: -10px;
+    animation: aaa 0.7s 1;
+}
+@keyframes aaa{
+    0%{
+    left: -110%;
+    top: 90%;
+    }
+    50%{
+    left: 10%;
+    top: -30%;
+    }
+    100%{
+    left: -10%;
+    top: -10%;
+    }
+}
+contact{
+    box-sizing: border-box;
+    margin: 30;
+}
+contact1{
+    background: #007a8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    height: 100vh;
+    margin: -20px 0 50px;
+    padding: 10px;
+}
+.container1 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 522px;
+    min-width: 370px;
+    margin-left: 310px;
+}
+.card-container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    height: 480px;
+    background-color: darkgrey;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    height: 460px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    height: 522px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+.left-container {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    line-height: 22px
+}
+
+.left p {
+    font-size: 0.9rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.right-container {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+
+input,
+textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #00b4cf;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid darkslateblue;
+    background-color: darkslateblue;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+textarea {
+    height: 90px;
+}
+/* responsive */
+
+@media only screen and (max-width: 600px){
+    .left {
+        display: none;
+    }
+
+    .lg-view {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sm-view {
+        display: none;
+    }
+}
+.login{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:gainsboro;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Georgia;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login h1{
+    color:darkslateblue;
+    text-transform: uppercase;
+    font-weight: 100px;
+}
+
+.login input[type="text"],.login input[type="password"]{
+    border: 0;
+    background:none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid darkslateblue;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: darkslateblue;
+    border-radius: 25px;
+    transition: 0.25px;
+    font-family: rockwell;
+}
+
+.login input[type="text"]:focus,.login input[type="password"]:focus{
+    width: 220px;
+    border-color: darkslateblue;
+}
+
+.login input[type="submit"]{
+    border: 0;
+    background:none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid darkslateblue ;
+    padding: 10px;
+    width: 100px;
+    outline: none;
+    color: darkslateblue;
+    border-radius: 25px;
+    transition: 0.25px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login input[type="submit"]:hover{
+    width: 100px;
+    background-color: darkslateblue;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <!--header-->
+        <div class="email">
+            <div class="container">
+                <ul>
+                    <li><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><i class="fa-regular fa-envelope"></i> andtnriola@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+            <h1><a href="andtnriola.html">ANDI TENRIOLA</a></h1>
+                <ul>
+                    <li><a href="andtnriola.html">HOME</a></li>
+                    <li><a href="biodata.html">BIODATA</a></li>
+                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                    <li class="active"><a href="login.html">LOGIN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--label-->
+        <section class="label">
+            <div class="container">
+                <p>Home/Login</p>
+            </div>
+        </section>
+        <div class="container">
+            <header>
+            <form class="login" method="post" onsubmit="return cek()" action="dashboard.html">
+          <h1>Login</h1>
+                <input type="text" placeholder="Username" id="username">
+                <input type="password" placeholder="Password" id="password">
+                <input type="submit" value="Login">
+                <span id="tampilan"> </span>
+            </form>
+            </header>
+            </div>
+            <script language="JavaScript">
+                function cek(){
+                    var username1 = document.getElementById("username").value;
+                    var password1 = document.getElementById("password").value;
+                    if(username1 == "ola" && password1 == "ola"){
+                        return true;
+                    }else{
+                        var tampilan1 = document.getElementById("tampilan").innerHTML =
+                        "Username atau Password yang anda masukkan salah";
+                        return false;
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>
